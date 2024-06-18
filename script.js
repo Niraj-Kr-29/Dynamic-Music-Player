@@ -19,7 +19,7 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder){
     currFolder = folder
-    let a = await fetch(`https://github.com/Niraj-Kr-29/Project-Music-Player-/tree/main/songs/${folder}/`)
+    let a = await fetch(`./${folder}/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -69,7 +69,7 @@ async function getSongs(folder){
 
 function playMusic (track,pause=false){
     // let audio = new Audio("/songs/"+track)
-    currentSong.src = `https://github.com/Niraj-Kr-29/Project-Music-Player-/tree/main/songs/${currFolder}/`+ track
+    currentSong.src = `./${currFolder}/`+ track
     if(!pause){
         currentSong.play()
     document.querySelector("#play").src = "img/pause.svg"
@@ -96,7 +96,7 @@ function playMusic (track,pause=false){
 
 //Function to display albums
 async function displayAlbums(){
-    let a = await fetch(`https://github.com/Niraj-Kr-29/Project-Music-Player-/tree/main/songs/`)
+    let a = await fetch(`/songs/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -136,7 +136,7 @@ async function displayAlbums(){
 
 async function main(){
     // Get the list of all the songs
-    songs = await getSongs("Alan_Walker")
+    songs = await getSongs("songs/Alan_Walker")
     playMusic(songs[0].replaceAll("%20", " ").trim(),true)
     
     // Display all the albums on the page
