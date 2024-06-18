@@ -20,7 +20,7 @@ A fully functional music player built using pure HTML, CSS, and JavaScript. This
 ![Playlist View](screenshots/playlist-view.png)
 
 ### Responsive Design
-![Responsive Design](screenshots/responsive-design.png) <img src="screenshots/hamburger.png">
+![Responsive Design](screenshots/responsive-design.png) <br><br> <img src="screenshots/hamburger.png">
 
 ## Technologies Used 
 
