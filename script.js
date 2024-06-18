@@ -136,7 +136,7 @@ async function displayAlbums(){
 
 async function main(){
     // Get the list of all the songs
-    songs = await getSongs("songs/Alan_Walker")
+    songs = await getSongs("Alan_Walker")
     playMusic(songs[0].replaceAll("%20", " ").trim(),true)
     
     // Display all the albums on the page
