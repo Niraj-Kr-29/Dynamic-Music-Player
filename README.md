@@ -20,7 +20,15 @@ A fully functional music player built using pure HTML, CSS, and JavaScript. This
 ![Playlist View](screenshots/playlist-view.png)
 
 ### Responsive Design
-![Responsive Design](screenshots/responsive-design.png) <br><br> <img src="screenshots/hamburger.png">
+![Responsive Design](screenshots/responsive-design.png) <br>
+
+
+
+
+https://github.com/Niraj-Kr-29/Project-Music-Player-/assets/165492814/6b70e084-0365-4ccc-a68d-d94069e108f2
+
+
+
 
 ## Technologies Used 
 
